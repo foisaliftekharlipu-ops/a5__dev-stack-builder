@@ -6,35 +6,31 @@ const Hero = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:pl-10 lg:pr-6 xl:pl-12 xl:pr-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-4 items-center">
           
-          {/* Left Column: Heading & Details */}
-          <div className="lg:col-span-5 text-center lg:text-left space-y-6">
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-normal text-slate-900 leading-tight">
-              <span className="text-[#0f172b] block">Build Your Ideal</span>
-              <span className="brand-gradient-text block">Development Stack</span>
+          <div className="lg:col-span-5 text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-[46px] font-extrabold leading-[1.14]">
+              <span className="text-[#0f172b] block">
+                Build Your Ideal
+              </span>
+              <span className="bg-gradient-to-r from-[#ff4d2d] via-[#e11d74] via-[#b8129e] via-[#8a1eb2] to-[#6c35de] bg-clip-text text-transparent block mt-1">
+                Development Stack
+              </span>
             </h1>
 
-            <p className="text-slate-500 text-base sm:text-lg max-w-md mx-auto lg:mx-0 leading-relaxed font-normal">
-              Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.
+            <p className="text-[#596780] text-[15px] sm:text-[14px] leading-[1.65] font-[450] mt-5">
+              Explore frontend, backend, database, and tooling options,
+              <p>compare them side by side, and put together the stack that fits your</p> next project.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
-              <a
-                href="#technologies"
-                className="px-6 py-3 rounded-lg text-xs sm:text-sm font-semibold text-white brand-gradient shadow-md hover:opacity-95 active:scale-95 transition-all"
-              >
+            <div className="flex items-center gap-4 mt-8">
+              <button className="px-6 py-3 rounded-xl text-white font-semibold text-sm bg-gradient-to-r from-[#ff6b35] to-[#ec3b83] hover:opacity-95 shadow-sm transition-all active:scale-[0.98]">
                 Explore Technologies
-              </a>
-
-              <a
-                href="#learn-more"
-                className="px-6 py-3 rounded-lg text-xs sm:text-sm font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 active:scale-95 transition-all"
-              >
+              </button>
+              <button className="px-6 py-3 rounded-xl text-slate-600 font-medium text-sm bg-white border border-slate-200 hover:bg-slate-50 transition-all active:scale-[0.98]">
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
 
-          {/* Right Column: 7 cols */}
           <div className="lg:col-span-7 flex justify-center lg:justify-end items-center">
             <div className="w-full flex justify-center lg:justify-end lg:-mr-12 xl:-mr-20">
               <img

@@ -1,14 +1,18 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-  .brand-gradient {
-    background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
-  }
   .brand-gradient-text {
-    background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #ff6b35 0%, #ec3b83 50%, #7c3aed 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
