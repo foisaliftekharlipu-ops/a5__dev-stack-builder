@@ -2,31 +2,37 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white border-t border-slate-100 pt-16 pb-12">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="w-full bg-white border-t border-slate-100 pt-12 pb-8 mt-auto">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-14 border-b border-slate-100 text-center md:text-left">
+        {/* Main Footer Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-10 border-b border-slate-100">
           
-          <div className="lg:col-span-2 flex flex-col items-center md:items-start">
+          {/* Brand Info (Centered on Mobile, Left-aligned on Desktop) */}
+          <div className="lg:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center">
               <img 
                 src="/logo-text.png" 
-                alt="DevStack Logo" 
+                alt="DevStack Full Logo" 
                 className="h-8 w-auto object-contain"
               />
             </div>
 
-            <p className="text-slate-500 text-sm leading-relaxed mt-4">
+            <p className="text-slate-500 text-xs sm:text-[13px] leading-relaxed mt-4 max-w-sm">
               Curated tools, technologies, and resources for developers building modern software.
             </p>
 
-            <div className="flex items-center gap-5 mt-6 text-sm font-semibold text-slate-700">
+            {/* Social Links with Dots on Mobile */}
+            <div className="flex items-center gap-2 sm:gap-4 mt-6 text-xs sm:text-sm font-semibold text-slate-700">
               <a href="#github" className="hover:text-[#e62072] transition-colors">GitHub</a>
+              <span className="text-slate-300">•</span>
               <a href="#twitter" className="hover:text-[#e62072] transition-colors">Twitter</a>
+              <span className="text-slate-300">•</span>
               <a href="#linkedin" className="hover:text-[#e62072] transition-colors">LinkedIn</a>
             </div>
           </div>
 
+          {/* Links: Hidden on Mobile as per design, visible on desktop */}
           <div className="hidden md:block">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900">Product</h4>
             <ul className="mt-4 space-y-3 text-sm text-slate-500 font-normal">
@@ -55,9 +61,10 @@ const Footer = () => {
 
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center sm:text-left">
+        {/* Bottom Bar (Centered on Mobile) */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 text-center sm:text-left">
           <p>© 2026 Dev Stack. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <a href="#privacy" className="hover:text-slate-600 transition-colors">Privacy</a>
             <a href="#terms" className="hover:text-slate-600 transition-colors">Terms</a>
           </div>
