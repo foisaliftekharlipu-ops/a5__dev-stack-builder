@@ -1,111 +1,74 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("Home");
-
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Technologies", href: "#technologies" },
-    { name: "Projects", href: "#projects" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 border-b border-slate-200">
-      <div className="max-w-350 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[66px]">
+    <header className="w-full bg-white border-b border-slate-100 sticky top-0 z-50">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           
-
-          <div className="flex items-center md:hidden">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              type="button"
-              className="p-2 -ml-2 text-gray-700 hover:text-[#d91b7e] transition-colors focus:outline-none"
-              aria-label="Toggle menu"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+          <div className="flex items-center gap-2.5">
+            <img 
+              src="/logo.png" 
+              alt="DevStack Logo" 
+              className="w-8 h-8 object-contain"
+            />
+            <span className="text-xl font-extrabold text-[#0f172a] tracking-tight whitespace-nowrap">
+              Dev<span className="text-[#e62072]">Stack</span>
+            </span>
           </div>
 
-          <div className="flex items-center">
-            <a href="#home" className="flex items-center gap-2.5 select-none">
-              <img
-                src="/logo.png"
-                alt="DevStack Logo"
-                className="w-8 h-8 object-contain"
-              />
-              <span className="text-base font-bold tracking-tight text-slate-900">
-                <span className="font-bold text-[#0f172b]">Dev </span>
-                <span className="font-bold text-[#e70a7b]">Stack</span>
-              </span>
-            </a>
-          </div>
-
-
-          <nav className="hidden md:flex items-center space-x-7 lg:space-x-9 text-[15px]">
-            {navLinks.map((link) => {
-              const isActive = activeLink === link.name;
-              return (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setActiveLink(link.name)}
-                  className={`transition-colors duration-150 ${
-                    isActive
-                      ? "text-[#d91b7e] font-semibold"
-                      : "text-[#0f172b]/80 hover:text-[#d91b7e]"
-                  }`}
-                >
-                  {link.name}
-                </a>
-              );
-            })}
+          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+            <a href="#home" className="text-[#e62072] font-semibold">Home</a>
+            <a href="#technologies" className="hover:text-slate-900 transition-colors">Technologies</a>
+            <a href="#projects" className="hover:text-slate-900 transition-colors">Projects</a>
+            <a href="#about" className="hover:text-slate-900 transition-colors">About</a>
+            <a href="#contact" className="hover:text-slate-900 transition-colors">Contact</a>
           </nav>
 
-          {/* Right Action Buttons */}
-          <div className="flex items-center gap-3 sm:gap-5">
-            <button className="text-[15px] font-semibold text-[#0f172b] hover:text-[#d91b7e] transition-colors px-2 py-1.5">
+          <div className="hidden md:flex items-center gap-4">
+            <button className="text-sm font-semibold text-slate-700 hover:text-slate-900">
               Sign In
             </button>
-            <button className="text-[14px] font-semibold text-white px-6 py-2.5 rounded-full bg-[#d91b7e] hover:bg-[#c0156e] active:scale-95 transition-all shadow-sm">
+            <button className="px-4 py-2 rounded-full text-white font-medium text-xs bg-[#e62072] hover:opacity-90 transition-opacity shadow-sm">
               Sign Up
             </button>
           </div>
 
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-50"
+            aria-label="Toggle Menu"
+          >
+            {isOpen ? (
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
         </div>
       </div>
 
-
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-1 shadow-md">
-          {navLinks.map((link) => {
-            const isActive = activeLink === link.name;
-            return (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => {
-                  setActiveLink(link.name);
-                  setIsMobileMenuOpen(false);
-                }}
-                className={`block px-3 py-2.5 rounded-lg text-sm transition-colors ${
-                  isActive
-                    ? "text-[#d91b7e] font-semibold bg-pink-50"
-                    : "text-[#0f172b] hover:text-[#d91b7e] hover:bg-pink-50/50"
-                }`}
-              >
-                {link.name}
-              </a>
-            );
-          })}
+      {isOpen && (
+        <div className="md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+          <a href="#home" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-semibold text-[#e62072]">Home</a>
+          <a href="#technologies" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-medium text-slate-700">Technologies</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-medium text-slate-700">Projects</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-medium text-slate-700">About</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-medium text-slate-700">Contact</a>
+          <div className="pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+            <button className="w-full py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-700">
+              Sign In
+            </button>
+            <button className="w-full py-2.5 rounded-full text-white font-semibold text-sm bg-[#e62072]">
+              Sign Up
+            </button>
+          </div>
         </div>
       )}
     </header>

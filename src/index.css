@@ -1,18 +1,25 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .brand-gradient-text {
-    background: linear-gradient(135deg, #ff6b35 0%, #ec3b83 50%, #7c3aed 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+:root {
+  --brand-gradient: linear-gradient(135deg, #ff6b35 0%, #ec3b83 50%, #7c3aed 100%);
 }
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .brand-gradient {
+    background-image: var(--brand-gradient);
+  }
+
+  .brand-gradient-text {
+    background-image: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
