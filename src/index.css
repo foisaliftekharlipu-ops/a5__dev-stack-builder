@@ -4,9 +4,11 @@
 
 @layer utilities {
   .brand-gradient {
-    @apply bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600;
+    background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
   }
   .brand-gradient-text {
-    @apply bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

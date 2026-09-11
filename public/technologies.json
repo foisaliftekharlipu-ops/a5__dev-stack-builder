@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "badge": "Popular",
+    "badgeStyle": "bg-[#e0f2fe] text-[#0284c7] border border-[#bae6fd]",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "badge": "Versatile",
+    "badgeStyle": "bg-[#dcfce7] text-[#16a34a] border border-[#bbf7d0]",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.8,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "badge": "Fast",
+    "badgeStyle": "bg-[#ffedd5] text-[#ea580c] border border-[#fed7aa]",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "badge": "Top SQL",
+    "badgeStyle": "bg-[#e0f2fe] text-[#2563eb] border border-[#bfdbfe]",
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "badge": "Standard",
+    "badgeStyle": "bg-[#dcfce7] text-[#15803d] border border-[#bbf7d0]",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "badge": "Top SQL",
+    "badgeStyle": "bg-[#e0f2fe] text-[#1d4ed8] border border-[#bfdbfe]",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "badge": "Cache",
+    "badgeStyle": "bg-[#fee2e2] text-[#dc2626] border border-[#fecaca]",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "badge": "Ubiquitous",
+    "badgeStyle": "bg-[#fef9c3] text-[#ca8a04] border border-[#fef08a]",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "category": "Language",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "badge": "Essential",
+    "badgeStyle": "bg-[#e0f2fe] text-[#0284c7] border border-[#bae6fd]",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "badge": "Robust",
+    "badgeStyle": "bg-[#e0f2fe] text-[#0369a1] border border-[#bae6fd]",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.6,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "badge": "Modern",
+    "badgeStyle": "bg-[#cffafe] text-[#0891b2] border border-[#a5f3fc]",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "badge": "Containers",
+    "badgeStyle": "bg-[#e0f2fe] text-[#0284c7] border border-[#bae6fd]",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "category": "DevOps",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  }
+]

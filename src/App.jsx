@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] antialiased">
+    <div className="min-h-screen bg-white antialiased">
       <Navbar />
       <Hero />
+      <Technologies />
     </div>
   );
 }
